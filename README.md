@@ -9,6 +9,8 @@ It includes code for **patch extraction, stain normalization, training, and infe
 ### **Download Model Weights**
 🔗 Model weights (.pth): https://drive.google.com/file/d/14DN2UD91y9nOOI_8of7fD-YWKbRHo2qZ/view?usp=drive_link
 
+The trained model achieved 89.6% accuracy and a macro F1-score of 0.889 on the test set.
+
 ---
 
 ### **Project Structure**
@@ -16,10 +18,7 @@ src/
  ├── training.py  
  ├── patches.py  
  └── normalization.py  
-
-models/  
- └── best_model.pth   (download link provided above)  
-
+ 
 ---
 
 ### **How to Use**
@@ -49,6 +48,8 @@ models/
 ### **Data Source**
 TCGA-LUAD whole-slide histology dataset  
 (WSI files are not included. They can be accessed from **TCGA**.)
+
+This work uses slide-level TCGA clinical stage labels without pixel-level or region-level annotations. Patches are weakly labeled based on their parent WSI following a standard weak-supervision approach for histopathology.
 
 ---
 
