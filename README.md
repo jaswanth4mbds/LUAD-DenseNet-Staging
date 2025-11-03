@@ -6,7 +6,7 @@ It includes code for **patch extraction, stain normalization, training, and infe
 
 ---
 
-### 📥 **Download Model Weights**
+### **Download Model Weights**
 🔗 Model weights (.pth): https://drive.google.com/file/d/14DN2UD91y9nOOI_8of7fD-YWKbRHo2qZ/view?usp=drive_link
 
 ---
@@ -20,19 +20,17 @@ src/
 models/  
  └── best_model.pth   (download link provided above)  
 
-requirements.txt
-
 ---
 
-### ✅ **How to Use**
+### **How to Use**
 
 **1. Install Dependencies**  
     pip install -r requirements.txt
 
-**2. Extract Patches (optional)**  
+**2. Extract Patches**  
     python src/patches.py --input_folder <WSI_folder> --output_folder patches
 
-**3. Stain Normalize (optional)**  
+**3. Stain Normalize**  
     python src/normalization.py
 
 **4. Train Model**  
@@ -40,7 +38,7 @@ requirements.txt
 
 ---
 
-### 🧠 **Model Information**
+### **Model Information**
 - **Model:** DenseNet121  
 - **Dataset:** TCGA-LUAD  
 - **Task:** 8-class LUAD staging  
@@ -48,13 +46,13 @@ requirements.txt
 
 ---
 
-### 📊 **Data Source**
+### **Data Source**
 TCGA-LUAD whole-slide histology dataset  
 (WSI files are not included. They can be accessed from **TCGA**.)
 
 ---
 
-### ⚠️ **Notes**
+### **Notes**
 - For **academic and research use only**
 - **Not for clinical use** without proper validation
 
