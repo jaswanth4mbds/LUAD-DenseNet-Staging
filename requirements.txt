@@ -1,0 +1,16 @@
+torch
+torchvision
+torchaudio
+timm
+triton
+openslide-python
+numpy
+pandas
+albumentations
+scikit-learn
+matplotlib
+seaborn
+tensorboard
+tqdm
+Pillow
+opencv-python
